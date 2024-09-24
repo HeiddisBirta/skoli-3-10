@@ -27,4 +27,20 @@ name: Age*/
 for (let i = 0; i < peopleArray.length; i++) {
   console.log(`Name:${peopleArray[i].name} Birthday: ${peopleArray[i].birthday}`)
 }
+// Output all properties of all people using for…in
+// Ex.:
+// name: Freddy McCready
+// Birth Date:  7/1/1987
+// Children: 3
+// Country: Australia
+// Can program: Yes
 
+for(let i =0; i < peopleArray.length; i++) {
+  console.log(`Name:${peopleArray[i].name}
+    Birthday: ${peopleArray[i].birthday}
+    Children: ${peopleArray[i].children}
+    Country: ${peopleArray[i].country}
+    Can Program: ${peopleArray[i].canProgram}
+    `
+  )
+}

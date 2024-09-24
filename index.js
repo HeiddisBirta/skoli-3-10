@@ -19,5 +19,15 @@ console.log("Total number of children:", totalChildren);
 /* Outputs one string per person formatted as such:
 name: Age*/
 for (var i = 0; i < peopleArray.length; i++) {
-    console.log(" Name:".concat(peopleArray[i].name, " Birthday: ").concat(peopleArray[i].birthday));
+    console.log("Name:".concat(peopleArray[i].name, " Birthday: ").concat(peopleArray[i].birthday));
+}
+// Output all properties of all people using for…in
+// Ex.:
+// name: Freddy McCready
+// Birth Date:  7/1/1987
+// Children: 3
+// Country: Australia
+// Can program: Yes
+for (var i = 0; i < peopleArray.length; i++) {
+    console.log("Name:".concat(peopleArray[i].name, "\n    Birthday: ").concat(peopleArray[i].birthday, "\n    Children: ").concat(peopleArray[i].children, "\n    Country: ").concat(peopleArray[i].country, "\n    Can Program: ").concat(peopleArray[i].canProgram, "\n    "));
 }
